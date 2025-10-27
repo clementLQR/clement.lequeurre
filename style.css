@@ -1,0 +1,279 @@
+/* Importation des polices d'écriture */
+@font-face {
+    font-family: 'Audiowide';
+    src: url(fonts/Audiowide/Audiowide-Regular.ttf);
+    font-family: 'Merriweather';
+    src: url(fonts/Merriweather_Sans/MerriweatherSans-VariableFont_wght.ttf);
+}
+
+/* Style global */
+
+body {
+    background-color: #05161A;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h2, h4, label{
+    font-family: Audiowide;
+    color: #e1eff2;
+}
+
+h1{
+    margin: auto;
+    padding: 20px 50px;
+}
+
+h1, h3{
+    font-family: Audiowide;
+    color: #0f9297;
+}
+
+p{
+    font-family: Merriweather;
+    color: #e1eff2;
+}
+
+a{
+    text-decoration: none;
+    font-family: Audiowide;
+    color: #e1eff2;
+}
+
+section{
+  margin: 100px 50px;
+}
+
+header hr, #competences hr, #portfolio hr{
+    border: 2px solid #0f9297;
+    width: 200px;
+    margin: 20px 0;
+}
+
+
+
+/* Style de l'image de fond */
+
+
+
+/* mobil first*/
+/* nav */
+
+.menu {
+    position: fixed;
+    width: 0px;
+}
+
+#hamburger {
+    display: none;
+}
+
+#hamburger-logo {
+    cursor: pointer;
+    background: #072E33;
+    width: 200px;
+    display: block;
+    color: #e1eff2;
+    text-align: right;
+    transform: translateX(-168px);
+    padding: 10px;
+    border: solid #05161A;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background: #072E33;
+    overflow: hidden;
+    width: 200px;
+    transform: translateX(-200px);
+    border: solid #05161A;
+}
+
+#hamburger-logo, nav {
+    transition: 0.7s;
+}
+
+#hamburger:checked ~ #hamburger-logo, #hamburger:checked ~ nav {
+    transform: translate(0);
+}
+
+nav a{
+    color: #e1eff2;
+    text-decoration: none;
+    padding: 10px;   
+    line-height: 1.5;
+    gap: 20px;
+    text-decoration-color: transparent;
+    transition: text-decoration 0.8s ease;
+    border-left: 2.5px solid #0f9297;
+    margin: 5px;
+}
+
+nav a:hover{
+    color: #08c7ce;
+    text-underline-offset: 8px;
+    text-decoration: underline;
+}
+
+/* header */
+
+header img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #0f9297;
+    margin: 20px auto 0 auto;
+}
+
+header{
+  margin: 50px;
+}
+
+.photoProfilLG{
+    display: none;
+}
+/* main */
+
+/* compétence */
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.html-css, .javascript, .php, .mySQL, .wordPress{
+    background-color: #072E33;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.skills div p{
+    margin-top: 10px;
+}
+
+.pourcentage{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+progress{
+    width: 70%;
+    height: 20px;
+    accent-color: #0f9297;
+}
+
+/* formation */
+
+#formations{
+    margin: 0px;
+    background-color: #072E33;
+    padding: 40px 20% 100px 20%;
+}
+
+#formations h2, #formations h3{
+    text-align: center;
+}
+
+#formations hr{
+    border: 2px solid #0f9297;
+    width: 200px;
+}
+
+
+.cadre{
+    background-color: #0f9297;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px #0f9297;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #072E33;
+}
+
+.cadre h3{
+    color: #072E33;
+}
+
+/* portfolio */
+
+.projets img{
+    display: block;
+    border-radius: 15px;
+    border-end-end-radius: 0px;
+    border-end-start-radius: 0px;
+    margin: -20px -20px 10px -20px;
+    width: calc(100% + 40px);
+}
+
+.projets {
+    flex-direction: column;
+    align-items: center;
+}
+
+.projet{ 
+    margin-bottom: 40px;
+    background-color: #072E33;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+/* footer */
+
+footer{
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 4px solid #0f9297;
+    margin-top: 100px;
+    background-color: #072E33;
+}
+
+/* tablette */
+
+
+@media screen and (min-width: 700px) {
+
+    /* header */
+
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header p{
+        padding-right: 20px;
+        max-width: 75%;
+    }
+
+    .photoProfil{
+        display: none;
+    }
+
+    .photoProfilLG{
+        display: block;
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+/* écran large */
+
+@media screen and (min-width: 1200px) {
+
+    .skills{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+}
