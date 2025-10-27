@@ -1,9 +1,18 @@
 /* Importation des polices d'écriture */
 @font-face {
-    font-family: 'Audiowide';
-    src: url(fonts/Audiowide/Audiowide-Regular.ttf);
-    font-family: 'Merriweather';
-    src: url(fonts/Merriweather_Sans/MerriweatherSans-VariableFont_wght.ttf);
+  font-family: 'Audiowide';
+  src: url('fonts/Audiowide/Audiowide-Regular.woff2') format('woff2'),
+       url('fonts/Audiowide/Audiowide-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('fonts/Merriweather_Sans/MerriweatherSans-VariableFont_wght.woff2') format('woff2'),
+       url('fonts/Merriweather_Sans/MerriweatherSans-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Style global */
@@ -298,3 +307,4 @@ footer{
     }
 
 }
+
