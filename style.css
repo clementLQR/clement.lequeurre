@@ -57,6 +57,14 @@ header hr, #competences hr, #portfolio hr{
 
 /* Style de l'image de fond */
 
+.imgeFond{   
+    background-image: url("Images/background.png");
+    background-size: cover;        
+    background-repeat: no-repeat;
+    background-position: center top;
+    min-height: 100vh;
+}
+
 
 
 /* mobil first*/
@@ -138,6 +146,12 @@ header{
 /* main */
 
 /* compétence */
+
+#competences{
+    margin: 0px 50px;
+    padding: 0 0 50px 0 ;
+}
+
 
 .skills{
     display: flex;
@@ -269,6 +283,13 @@ footer{
 /* écran large */
 
 @media screen and (min-width: 1200px) {
+
+    .imgeFond{   
+        background-image: url("Images/background.png");
+        background-size: cover;        
+        background-repeat: no-repeat;  
+        background-position: center start;
+    }
 
     .skills{
         display: flex;
