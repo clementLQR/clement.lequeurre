@@ -250,6 +250,38 @@ progress{
     padding: 20px;
 }
 
+/* contact */
+
+.mesreseaux{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.mesreseaux img {
+    width: 25%;
+    max-width: 400px;
+    transition: transform 0.8s ease;
+    cursor: pointer;
+}
+
+.mesreseaux img:hover {
+    transform: scale(1.2);
+}
+
+.mesreseaux div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.mesreseaux p, .mesreseaux a{
+    gap: 15px;
+    margin: 0;
+    font-family: Audiowide;
+}
+
 /* footer */
 
 footer{
@@ -287,6 +319,11 @@ footer{
         width: 100%;
         max-width: 250px;
     }
+  
+    .mesreseaux{
+      flex-direction: row;
+      justify-content: space-around;
+    }
 }
 
 /* écran large */
@@ -307,5 +344,6 @@ footer{
     }
 
 }
+
 
 
