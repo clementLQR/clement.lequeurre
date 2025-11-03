@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /fonts/
+Disallow: /Images/
+Allow: /index.html
+Allow: /style.css
+
+Sitemap: https://tonsite.com/sitemap.xml
