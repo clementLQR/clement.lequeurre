@@ -266,6 +266,7 @@ progress{
 
 .tagContainerProjet{
     display: flex;
+    flex-wrap: wrap; 
 }
 
 .tagProjet{
@@ -376,6 +377,7 @@ footer{
     }
 
 }
+
 
 
 
