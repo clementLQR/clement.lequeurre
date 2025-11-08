@@ -6,16 +6,17 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
     <url>
-        <loc>https://clementlequeurre.vercel.app//index.html</loc>
-        <lastmod>2025-11-03</lastmod>
+        <loc>https://clementlequeurre.com//index.html</loc>
+        <lastmod>2025-11-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
 
     <url>
-        <loc>https://clementlequeurre.vercel.app/style.css</loc>
+        <loc>https://clementlequeurre.com/style.css</loc>
         <lastmod>2025-11-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
+
 </urlset>
