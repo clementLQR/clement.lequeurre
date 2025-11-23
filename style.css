@@ -375,10 +375,12 @@ footer{
         flex-direction: row;
     }
     
-    .html-css, .javascript, .php, .mySQL, .wordPress{
-        width : 100%;
+    .skills > div {
+        flex: 1;               
+        min-width: 250px;
     }
 }
+
 
 
 
