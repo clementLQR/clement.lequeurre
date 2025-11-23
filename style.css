@@ -374,8 +374,12 @@ footer{
         justify-content: space-between;
         flex-direction: row;
     }
-
+    
+    .html-css, .javascript, .php, .mySQL, .wordPress{
+        width : 100%;
+    }
 }
+
 
 
 
