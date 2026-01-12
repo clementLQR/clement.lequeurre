@@ -62,7 +62,7 @@ header hr, #competences hr, #portfolio hr, #contact hr{
 
 /* Transition du texte qui apparait*/
 
-.html-css, .javascript, .php, .mySQL, .wordPress, .projet, .mesreseaux {
+.FrontEnd, .BackEnd, .GestionDeProjets, .AutreCompetences, .projet, .mesreseaux {
   opacity: 0;
   transform: translateY(70px);
   transition: all 1.2s ease-out;
@@ -92,6 +92,7 @@ header hr, #competences hr, #portfolio hr, #contact hr{
 .menu {
     position: fixed;
     width: 0px;
+    z-index: 10;
 }
 
 #hamburger {
@@ -178,7 +179,7 @@ header{
     gap: 20px;
 }
 
-.html-css, .javascript, .php, .mySQL, .wordPress{
+.FrontEnd, .FrontEnd, .BackEnd, .GestionDeProjets, .AutreCompetences{
     background-color: #072E33;
     padding: 20px;
     border-radius: 15px;
@@ -217,25 +218,14 @@ progress{
     width: 200px;
 }
 
-
-.cadre{
-    background-color: #0f9297;
-    width: 100px;
-    height: 100px;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 20px auto;
-    box-shadow: 0 0 10px #0f9297;
+.timeline-content {
+    background: #05161A;
+    padding: 15px 25px;
+    border-radius: 15px;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #072E33;
+    margin-top: 50px;
 }
 
-.cadre h3{
-    color: #072E33;
-}
 
 /* portfolio */
 
@@ -377,6 +367,59 @@ footer{
     
     .skills > div {
         flex: 1;               
+    }
+
+    .timeline {
+        position: relative;
+        margin: 50px auto;
+    }
+
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 4px;
+        background-color: #05161A;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .timeline-item {
+        padding: 20px 40px;
+        position: relative;
+        width: 50%;
+    }
+
+    .timeline-item::after {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-color: #05161A;
+        border-radius: 50%;
+        top: 30px;
+        right: -8px;
+        z-index: 1;
+    }
+
+    .left {
+        left: 0;
+        text-align: right;
+    }
+
+    .right {
+        left: 50%;
+    }
+
+    .right::after {
+        left: -8px;
+    }
+
+    .timeline-content {
+        background: #05161A;
+        padding: 15px 25px;
+        border-radius: 15px;
     }
 }
 

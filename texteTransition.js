@@ -9,7 +9,7 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 const hiddenElements = document.querySelectorAll(
-  '.html-css, .javascript, .php, .mySQL, .wordPress, .projet, .mesreseaux'
+  '.FrontEnd, .BackEnd, .GestionDeProjets, .AutreCompetences, .projet, .mesreseaux'
 );
 
 hiddenElements.forEach((element) => {
