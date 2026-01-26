@@ -272,32 +272,72 @@ progress{
 
 .mesreseaux{
     display: flex;
-    flex-direction: column;
-    margin-top: 100px;
+    justify-content: center;
 }
 
-.mesreseaux img {
-    width: 25%;
-    max-width: 400px;
-    transition: transform 0.8s ease;
-    cursor: pointer;
-}
-
-.mesreseaux img:hover {
-    transform: scale(1.2);
-}
-
-.mesreseaux div{
+.carte{
+    background-color: #e1eff2;
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
+    max-width: 300px;
+    aspect-ratio: 2 / 3.5;
+    overflow: hidden;
+}
+
+.infoCarte{
+    height: 40%;
+    background-color: #072E33;
     text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.mesreseaux p, .mesreseaux a{
-    gap: 15px;
-    margin: 0;
-    font-family: Audiowide;
+.infoCarte h4,.infoCarte h3{
+    margin-top: -10px;
+    padding-top: 0;
+}
+
+.infoCarte img{
+    display: none;
+}
+
+.logoContact{
+    flex-direction: row;
+    align-items: center;
+    background-color: #05161A;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    border-radius: 0 0 40px 40px;
+    height: 20%;
+}
+
+.logoContact img{
+    width: 32px;
+    height: 32px;
+}
+
+.lienContact hr{
+    border: 1px solid #0f9297;
+    margin: 5px 0;
+}
+
+.lienContact{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    height: 40%;
+    justify-content: center;
+}
+
+.lienContact a{
+    color: #072E33;
+    font-size: 11px;
 }
 
 /* footer */
@@ -345,6 +385,66 @@ footer{
     .mesreseaux{
       flex-direction: row;
       justify-content: space-around;
+    }
+
+    .carte{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1000px;
+        aspect-ratio: 3.5 / 2;
+    }
+
+    .infoCarte{
+        background-color: #072E33;
+        width: 40%;
+    }
+
+    .infoCarte img{
+        display: block;
+        width: 50%;
+        max-width: 150px;
+        margin: 10px auto 25px auto;
+    }
+
+    .infoCarte, .logoContact, .lienContact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .logoContact{
+        border-radius: 0 40px 40px 0;
+        background-color: #05161A;
+        width: 10%;
+        gap : 60px;
+    }
+
+    .logoContact a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logoContact img{
+        width: 50%;
+        max-width: 100px;
+        cursor: pointer;
+        height: auto;
+    }
+
+    .lienContact{
+        padding: 20px;
+        align-items: start;
+        gap: 15px;
+        width: 50%;
+    }
+
+    .lienContact a{
+        color: #072E33;
+        font-size: 15px;
     }
 }
 
@@ -422,12 +522,3 @@ footer{
         border-radius: 15px;
     }
 }
-
-
-
-
-
-
-
-
-
