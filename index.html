@@ -1,284 +1,390 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Clément Lequeurre | Développeur Web</title>
+    <link rel="stylesheet" href="style/styleGlobal.css">
 
-    <!-- SEO -->
-    <meta name="description" content="Portfolio de Clément Lequeurre, étudiant en multimédia à Blois et passionné par la création de sites web. Découvrez mes compétences, formations et projets.">
-    <meta name="keywords" content="Clément Lequeurre, développeur web, portfolio, HTML, CSS, JavaScript, PHP, MySQL, WordPress, MMI Blois">
-    <meta name="author" content="Clément Lequeurre">
-    <meta name="robots" content="index, follow">
-
-    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
-    <meta property="og:title" content="Clément Lequeurre | Développeur Web">
-    <meta property="og:description" content="Étudiant en multimédia à Blois, passionné par le développement web. Découvrez mes compétences et mes projets.">
-    <meta property="og:image" content="https://clementlequeurre.com/Images/PhotoProfil.png">
-    <meta property="og:url" content="https://clementlequeurre.com">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="fr_FR">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Clément Lequeurre | Développeur Web">
-    <meta name="twitter:description" content="Portfolio de Clément Lequeurre, étudiant en MMI à Blois et passionné de création web.">
-    <meta name="twitter:image" content="https://clementlequeurre/Images/PhotoProfil.png">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="Images/favicon.png">
-    
-    <!-- Feuille de style -->
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
-<body> 
-
-    <div class="imgeFond">
-
-    <div class="logo">
-        <h1>CLEMENT LEQUEURRE</h1>
-    </div>
-
-    <div class="menu">
-        
-        <input type="checkbox" id="hamburger">
-        <label id="hamburger-logo" for="hamburger">☰</label>
-        <nav>
-            <a href="#competences">Compétences</a>
-            <a href="#formations">Formations</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </div>
-
-
-
-
-        <header>
-            <div class="photoProfil">
-                <img src="Images/PhotoProfil.jpg" alt="Photo de profil Clément Lequeurre"> 
+<body>
+    <div class="background">
+        <div style="position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden;">
+        <!-- halo teal en haut à gauche -->
+            <div class="hallo1">
             </div>
-            <div class="intro">
-                <h3>Devloppeur web</h3>
-                <h2>QUI SUIS-JE ?</h2>
-                <hr>
-                <p>
-                    Je me présente. Je m’appelle Clément Lequeurre, j’ai 19 ans et je suis actuellement à Blois en étude de Multimédia avec la particularité d'être passionné par la création de site web. <br><br>Ce portfolio est l’occasion pour moi de partager mes projets et de montrer mes compétences en développement web.
-                </p>
-            </div>  
-            <div class="photoProfilLG">
-                <img src="Images/PhotoProfil.jpg" alt="Photo de profil Clément Lequeurre">
-            </div>     
-        </header>
-
-        <main>
-
-            <section id="competences">
-                <div>
-                    <h3>Compétences</h3>
-                    <h2>QU'EST CE QUE JE SAIS FAIRE ?</h2>
-                    <hr>
-                    <div class="skills">
-                        <div class="FrontEnd">
-                            <h4>Front-End</h4>
-                            <p>
-                                Je maitrise les langages de base du développement front-end, à savoir HTML5, CSS3 et JavaScript. Je suis capable de créer des interfaces utilisateur responsives et interactives, en utilisant des frameworks comme Bootstrap et des bibliothèques comme Chart.js pour de la data-visualisation par exemple.
-                            </p>
-                        </div>
-                        <div class="BackEnd">
-                            <h4>Back-End</h4>
-                            <p>
-                                Je possède des compétences en développement back-end avec PHP. Je suis capable de créer des applications web dynamiques, de gérer les bases de données avec MySQL et d’assurer la communication entre le front-end et le back-end.
-                            </p>
-                        </div>
-                        <div class="GestionDeProjets">
-                            <h4>Gestion de Projets</h4>
-                            <p>
-                                Je maîtrise les bases de la gestion de projets web, y compris la planification, l’organisation des tâches, la communication avec les parties prenantes et l’utilisation d’outils collaboratifs comme Trello ou GitHub.
-                            </p>
-                        </div>
-
-                        <div class="AutreCompetences">
-                            <h4>Autres Compétences</h4>
-                            <p>
-                                Je suis également familier avec la création et la gestion de sites web via WordPress, ainsi que les bases du référencement SEO pour améliorer la visibilité des sites sur les moteurs de recherche. Mais aussi des compétences en design graphique avec des outils comme Photoshop et Illustrator.
-                            </p>
-                        </div>
-                    </div>
-                </div>    
-            </section>
-        
-        </main>
-
+            <!-- halo secondaire en bas à droite -->
+            <div class="hallo2">
+            </div>
         </div>
-        
-        <main>
-        <section id="formations">
+    </div>
+
+    <nav class="navbar glass">
+        <span class="logo">
+            <a href="#" class="logo">CL<span class="dot">.</span></a>
+        </span>
+        <span>
+            <a href="#" class="nav-link">À propos</a>
+        </span>
+        <span>
+            <a href="#" class="nav-link">Compétences</a>
+        </span>
+        <span>
+            <a href="#" class="nav-link">Projets</a>
+        </span>
+        <span>
+            <a href="#" class="nav-link">Expérience</a>
+        </span>
+        <span>
+            <a href="#" class="nav-link contact">Contact</a>
+        </span>
+
+        <div>
+            <span class="darkmode">
+                <img src="assets/icons/sun.svg" alt="Dark Mode">
+            </span>
+
+            <span class="menu-toggle">
+                <img src="assets/icons/menu.svg" alt="Menu">
+                <div id="menu" class="menu">
+                    <div>
+                        <a href="#about"      class="nav-link-sm">à propos</a>
+                        <a href="#skills"     class="nav-link-sm">Compétences</a>
+                        <a href="#projects"   class="nav-link-sm">Projets</a>
+                        <a href="#experience" class="nav-link-sm">Expérience</a>
+                        <a href="#contact"    class="nav-link-sm contact">Contact</a>
+                    </div>
+                </div>
+            </span>           
+        </div>
+    </nav>
+
+    <span class="scroll-indicator">
+        <img src="assets/icons/arrow-down.svg" alt="Arrow">
+    </span>
+
+    <header>
+           <div class="header-div1 glass">
             <div>
-                <h3>Formation</h3>
-                <h2>MA FORMATION PROFESSIONELLE</h2>
-                <hr>
+                <h1>Je suis Clément <br> <span>Lequeurre</span></h1>
+                <h2>Developpeur Full-Stack</h2>
+                <p>Je conçois et construis des applications web rapides et élégantes — depuis une architecture back-end propre jusqu'à des interfaces soignées et réfléchies.</p>
             </div>
-
-            <div class="timeline">
-
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <h3>2024 - 2027</h3>
-                        <h4>BUT Métiers du Multimédia et de l’Internet</h4>
-                        <p>Parcours développement Web et dispositifs interactifs <br> IUT Jean Jaurès, Blois</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <h3>2022 - 2024</h3>
-                        <h4>Baccalauréat Général</h4>
-                        <p>Spécialités : NSI, Physique-Chimie, Mathématiques<br>Lycée Jean Guéhenno, Flers</p>
-                    </div>
-                </div>
-
+            <div class="header-div1-btn">
+                <button class="btn btn-primary">Voir mes projets <img src="assets/icons/arrow-right.svg" alt="Arrow"></button>
+                <button class="btn">Télécharger mon CV <img src="assets/icons/arrow-down.svg" alt="Download"></button>
             </div>
-
-        </section>
-
-        <section id="portfolio">
-
-            <h3>Portfolio</h3>
-            <h2>CE DONT JE SUIS CAPABLE ?</h2>
-            <hr>
-            <div class="projets">
-                <div class="projet">
-                    <img src="Images/iutQuest.png" alt="Capture d'écran du site IUT Quest">
-                    <h4>IUT - Quest</h4>
-                   <hr>
-                    <p>
-                        Pour ce projet de groupe, nous avions pour objectif de créer un site web pour un événement de l’IUT, à savoir une quête. <br>
-                        J'ai utilisé le framework Laravel pour développer le site, en intégrant un système de localisation pour permettre aux joueurs de valider des énigmes via l'application. <br>
-                        Ce projet m'a permis de renforcer mes compétences en développement web avec Laravel et de travailler sur un projet réel avec des contraintes de temps serrées. <br>
-                    </p>
-                    <div class="tagContainerProjet">
-                        <p class="tagProjet">HTML-CSS</p><p class="tagProjet">JAVASCRIPT</p><p class="tagProjet">PHP</p><p class="tagProjet">Laravel</p><p class="tagProjet">MySQL</p>
-                    </div>
-                </div>
-                <div class="projet">
-                    <img src="Images/SAE303.png" alt="Capture d'écran du site SAE 303">
-                    <h4>SAE 303 - Concevoir des visuels pour le Web</h4>
-                   <hr>
-                    <p>
-                        Pour ce projet de groupe, nous avions pour objectif de créer un site pour visuliser des données scientifiques présentent dans un tableau Excel. <br>
-                        J'ai utilisé HTML, CSS, Bootstrap et JavaScript avec la bibliothèque Chart.js pour créer des graphiques interactifs et responsives ainsi que node.js pour modifier les couleurs et typographies imposées par Bootstrap<br>
-                        Ce projet m'a permis de renforcer mes compétences en développement web et en visualisation de données. <br>
-
-                    </p>
-                    <div class="tagContainerProjet">
-                        <p class="tagProjet">JAVASCRIPT</p><p class="tagProjet">Node.js</p><p class="tagProjet">Bootstrap</p><p class="tagProjet">Chart.js</p>
-                    </div>
-                </div>
-                <div class="projet">
-                    <img src="Images/afficheBanshee.png" alt="Capture d'écran des affiches et pochette d'album du projet The Banshee">
-                    <h4>SAE 302 - Produire des contenus pour une communication plurimédia</h4>
-                    <hr>
-                    <p>
-                        Pour ce projet de groupe, nous avions pour objectif de créer une stratégie de communication pour un client réel, à savoir le groupe de musique The Banshee. <br>
-                        Nous avons créé des affiches, des pochettes d’album et du merch pour promouvoir le groupe, ainsi qu’un EPK (Electronic Press Kit) et une communication de presse pour les médias. <br>
-                        Ce projet m'a permis de renforcer mes compétences en communication visuelle et en stratégie de communication, ainsi que de travailler en collaboration avec un client réel. <br>
-                        Les créations sont disponibles sur mon GitHub.
-                    </p>
-                    <div class="tagContainerProjet">
-                        <p class="tagProjet">Indesign</p><p class="tagProjet">Photoshop</p>
-                    </div>
-                </div>
-                <div class="projet">
-                    <img src="Images/freemessage.png" alt="Capture d'écran du site Free Message">
-                    <h4>Free Message - Intégrer une expérience utilisateur</h4>
-                    <hr>
-                    <p>
-                        Free Message est une application web de messagerie anonyme que j'ai développée en utilisant HTML, CSS, JavaScript, PHP et MySQL. <br>
-                        Les utilisateurs peuvent envoyer et recevoir des messages, ils peuvent également supprimer les messages qu'ils ont envoyés, liké ou disliké des messages reçus. <br>
-                        Je me suis occupé du développement back-end pour assurer le bon fonctionnement de l'application et mon partenaire s'est concentré sur le design et l'interface utilisateur. <br>
-                        Ce projet m'a permis de renforcer mes compétences en développement web et en gestion de bases de données. <br>
-                        Le site est disponible sur mon GitHub.
-                    </p>
-                    <div class="tagContainerProjet">
-                        <p class="tagProjet">HTML-CSS</p><p class="tagProjet">JAVASCRIPT</p><p class="tagProjet">PHP</p><p class="tagProjet">MySQL</p>
-                    </div>
-                </div>
-                <div class="projet">
-                    <img src="Images/maquetteS3.png" alt="Capture d'écran d'une maquette de site web">
-                    <h4>Maquette pour un site fictif Eclosia</h4>
-                   <hr>
-                    <p>
-                        Pour ce projet individuel, nous avions pour objectif de créer une maquette de site web pour un client fictif, à savoir une entreprise de fleuriste. <br>
-                        J'ai créé une maquette responsive pour les trois types d'appareils (desktop, tablette et mobile) en respectant un wireframe imposé. <br>
-                        Ce projet m'a permis de renforcer mes compétences en design d'interface utilisateur et en création de maquettes pour le web. <br>                         
-                    </p>
-                    <div class="tagContainerProjet">
-                        <p class="tagProjet">Adobe Illustrator</p>
-                    </div>
-                </div>
-                <div class="projet">
-                    <img src="Images/sonoriteRoyal.png" alt="Capture d'écran du site Sonorité Royale">
-                    <h4>Sonorité Royale</h4>
-                    <hr>
-                    <p>
-                        Sonorité Royale est un projet fictif développé lors de ma première année de MMI.
-                        <br>
-                        À deux, nous avons inventé l’univers d’un festival à Blois et créé le site web qui lui donne vie.
-                        <br>
-                        Ce projet m'a permis de renforcer mes compétences en développement web et de comprendre l'importance d'une bonne gestion de projet. <br>
-                        Le site est disponible sur mon GitHub.
-                    </p>
-                    <div class="tagContainerProjet">
-                        <p class="tagProjet">HTML-CSS</p><p class="tagProjet">JAVASCRIPT</p><p class="tagProjet">PHP</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h3>Contact</h3>
-            <h2>VOUS SOUHAITEZ ME CONTACTER ?</h2>
-            <hr>
-
-            <div class="mesreseaux">
-                <div class="carte">
-                    <div class="infoCarte">
-                        <h2>Clément Lequeurre</h2>
-                        <h3>Contact</h3>
-                        <img src="Images/favicon.png" alt="Logo Clément Lequeurre">
-                        <h4>Développeur Web</h4>
-                    </div>
-                    <div class="logoContact">
-                        <a href="mailto:clement.lequeurre@gmail.com"><img src="Images/courrier.png" alt="Mon adresse mail"></a>
-                        <a href="https://www.linkedin.com/in/cl%C3%A9ment-lequeurre/"><img src="Images/linkedin.png" alt="Mon Linkedin"></a>
-                        <a href="https://github.com/clementLQR"><img src="Images/github.png" alt="Mon Github"></a>
-                    </div>
-                    <div class="lienContact">
-                        <a href="mailto:clement.lequeurre@gmail.com">clement.lequeurre@gmail.com</a>
-                        <hr>
-                        <a href="https://www.linkedin.com/in/cl%C3%A9ment-lequeurre/">Clément Lequeurre</a>
-                        <hr>
-                        <a href="https://github.com/clementLQR">github.com/clementLQR</a>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        </main>
-        
-    <footer>
-        <div class="footer">
-            <h3>Clément Lequeurre - 2026</h3>
         </div>
+        <div class="header-div2 glass">
+            <img src="assets/image/profile.jpg" alt="Profile">
+            <div>
+                Clément Lequeurre <br>
+                Blois, France
+            </div>
+        </div>
+        <div class="header-div3 glass">
+            <h3>TECH STACK</h3>
+            <div class="header-div3-tech-container">
+                <div class="header-div3-tech">
+                    <div><img src="assets/icons/nextjs.svg" alt="Next.js"></div>
+                    <div><img src="assets/icons/mysql.svg" alt="MySQL"></div>
+                    <div><img src="assets/icons/javascript.svg" alt="JavaScript"></div>
+                    <div><img src="assets/icons/react.svg" alt="React"></div>
+                    <div><img src="assets/icons/tailwindcss.svg" alt="Tailwind CSS"></div>
+                    <div><img src="assets/icons/git.svg" alt="Git"></div>
+                    <div><img src="assets/icons/php.svg" alt="PHP"></div>
+                    <div><img src="assets/icons/symfony.svg" alt="Symfony"></div>
+                    <div><img src="assets/icons/laravel.svg" alt="Laravel"></div>
+                </div>
+            </div>
+        </div>
+        <div class="header-div4 glass">
+            <div class="header-div4-img">
+                <img src="assets/image/IUTquest.png" alt="IUT Quest de Blois">
+            </div>
+            <div class="header-div4-description">
+                <span class="highlight">DERNIER PROJET</span>
+                <h2>IUT Quest</h2>
+                <p>Olympiades entre les IUT de Blois</p>
+                <button class="btn">Voir le projet <img src="assets/icons/arrow-right.svg" alt="Arrow"></button>
+            </div>
+        </div>
+        <div class="header-div5 glass">
+            <div class="header-div5-title">
+                <h2>Contactez-moi</h2>
+            </div>
+
+            <div class="header-div5-icons">
+                <div><img src="assets/icons/github.svg" alt="GitHub"></div>
+                <div><img src="assets/icons/linkedin.svg" alt="LinkedIn"></div>
+                <div><img src="assets/icons/mail.svg" alt="Mail"></div>
+                <div><img src="assets/icons/link.svg" alt="link"></div>
+            </div>
+        </div>
+        <div class="header-div6 glass">
+            <span>“</span>
+            <h2>Le succès n’est pas la clé du bonheur. Le bonheur est la clé du succès. Si vous aimez ce que vous faites, vous réussirez.</h2>
+        </div>
+        <div class="header-div7 glass">
+
+        </div>
+        <div class="header-div8 glass">
+            <div>
+                <span class="header-div8-highlight">30+</span> <br>
+                <span class="header-div8-text">Projets complétés</span><br>
+            </div>
+            <div>
+                <span class="header-div8-highlight">12</span><br>
+                <span class="header-div8-text">Technologies maîtrisées</span><br>
+            </div>
+            <div>
+                <span class="header-div8-highlight">5</span><br>
+                <span class="header-div8-text">Années de codage</span><br>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="about" class="section about">
+            <h4 class="section-title">01 - A PROPOS</h4>
+            <h2>Je m'intéresse aux détails qui rendent le logiciel facile à utiliser.</h2>
+            <p>Je suis un développeur web passionné par la création d'expériences numériques exceptionnelles. Avec une solide formation en développement web et une expérience pratique dans divers projets, je m'efforce de concevoir des applications web qui allient performance, esthétique et convivialité.</p>
+            <p>Mon approche du développement web repose sur une compréhension approfondie des besoins des utilisateurs et sur l'utilisation des technologies les plus récentes pour créer des solutions innovantes. Je suis constamment à la recherche de nouvelles opportunités pour apprendre et améliorer mes compétences, tout en contribuant à des projets qui ont un impact positif.</p>
+        </section>
+
+        <section id="skills" class="section skills">
+            <h4 class="section-title">02 - COMPÉTENCES</h4>
+            <h2>Outils avec lesquels je travaille quotidiennement</h2>
+
+            <div class="skills-grid">
+                <div class="skills-container glass">
+                    <h3>Front-End</h3>
+                    <div class="skill">
+                        <img src="assets/icons/tailwindcss.svg" alt="Tailwind CSS">
+                        <span>Tailwind CSS</span>
+                    </div>
+                    <div class="skill">
+                        <img src="assets/icons/javascript.svg" alt="JavaScript">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill">
+                        <img src="assets/icons/react.svg" alt="React">
+                        <span>React</span>
+                    </div>
+                    <div class="skill">
+                        <img src="assets/icons/nextjs.svg" alt="Next.js">
+                        <span>Next.js</span>
+                    </div>
+                </div>
+
+                <div class="skills-container glass">
+                    <h3>Back-End</h3>
+                    <div class="skill">
+                        <img src="assets/icons/php.svg" alt="PHP">
+                        <span>PHP</span>
+                    </div>
+                    <div class="skill">
+                        <img src="assets/icons/symfony.svg" alt="Symfony">
+                        <span>Symfony</span>
+                    </div>
+                    <div class="skill">
+                        <img src="assets/icons/laravel.svg" alt="Laravel">
+                        <span>Laravel</span>
+                    </div>
+                    <div class="skill">
+                        <img src="assets/icons/mysql.svg" alt="MySQL">
+                        <span>MySQL</span>
+                    </div>
+                </div>
+
+                <div class="skills-container glass">
+                    <h3>Outils & Méthodologies</h3>
+                    <div class="skill">
+                        <img src="assets/icons/git.svg" alt="Git">
+                        <span>Git</span>
+                    </div>
+                    <div class="skill">
+                        <img src="assets/icons/docker.svg" alt="Docker">
+                        <span>Docker</span>
+                    </div>
+                    <div class="skill">
+                        <img src="assets/icons/figma.svg" alt="Figma">
+                        <span>Figma</span>
+                    </div>
+                    <div class="skill">
+                        <img src="assets/icons/vscode.svg" alt="VS Code">
+                        <span>VS Code</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="projects" class="section projects">
+            <h4 class="section-title">03 - PROJETS</h4>
+            <h2>Quelques uns de mes projets</h2>
+
+            <div class="filtres">
+                <button class="btn-filtre btn-filtre-select">Tous</button>
+                <button class="btn-filtre">Full-Stack</button>
+                <button class="btn-filtre">Front-End</button>
+                <button class="btn-filtre">Back-End</button>
+            </div>
+
+            <div class="projects-grid glass">
+                <div class="projects-img-select">
+                    <img src="assets/image/IUTquest.png" alt="IUT Quest de Blois">
+                    <div class="projects-img-select-overlay">
+                        <div class="projects-img-select-tags">
+                            <span class="project-type highlight2">Full-Stack</span>
+                            <span class="project-year">2026</span>
+                        </div>
+                        <h3>IUT Quest</h3>
+                        <p>Projet de groupe pour les Olympiades entre les IUT de Blois.</p>
+                        <button class="btn btn-primary">Voir le projet <img src="assets/icons/arrow-right.svg" alt="Arrow"></button>
+                    </div>
+                </div>
+
+                <div class="projects-array">
+                    <div class="projects-element projects-element-select">
+                        <img src="assets/image/IUTquest.png" alt="IUT Quest de Blois" class="projects-element-img">
+                        <div>
+                            <h3>IUT Quest <span class="project-year ">2026</span></h3>
+                            <p>Projet de groupe pour les Olympiades entre les IUT de Blois.</p>
+                        </div>
+                        <span class="project-type highlight">Full-Stack</span>
+                        <img src="assets/icons/arrow-right.svg" class="projects-element-icon" alt="Arrow">
+                    </div>
+                    <div class="projects-element projects-element">
+                        <img src="assets/image/IUTquest.png" alt="IUT Quest de Blois" class="projects-element-img">
+                        <div>
+                            <h3>IUT Quest <span class="project-year ">2026</span></h3>
+                            <p>Projet de groupe pour les Olympiades entre les IUT de Blois.</p>
+                        </div>
+                        <span class="project-type highlight">Full-Stack</span>
+                        <img src="assets/icons/arrow-right.svg" class="projects-element-icon" alt="Arrow">
+                    </div>
+                                        <div class="projects-element projects-element">
+                        <img src="assets/image/IUTquest.png" alt="IUT Quest de Blois" class="projects-element-img">
+                        <div>
+                            <h3>IUT Quest <span class="project-year ">2026</span></h3>
+                            <p>Projet de groupe pour les Olympiades entre les IUT de Blois.</p>
+                        </div>
+                        <span class="project-type highlight">Full-Stack</span>
+                        <img src="assets/icons/arrow-right.svg" class="projects-element-icon" alt="Arrow">
+                    </div>                    <div class="projects-element projects-element">
+                        <img src="assets/image/IUTquest.png" alt="IUT Quest de Blois" class="projects-element-img">
+                        <div>
+                            <h3>IUT Quest <span class="project-year ">2026</span></h3>
+                            <p>Projet de groupe pour les Olympiades entre les IUT de Blois.</p>
+                        </div>
+                        <span class="project-type highlight">Front-End</span>
+                        <img src="assets/icons/arrow-right.svg" class="projects-element-icon" alt="Arrow">
+                    </div>                    <div class="projects-element projects-element">
+                        <img src="assets/image/IUTquest.png" alt="IUT Quest de Blois" class="projects-element-img">
+                        <div>
+                            <h3>IUT Quest <span class="project-year ">2026</span></h3>
+                            <p>Projet de groupe pour les Olympiades entre les IUT de Blois.</p>
+                        </div>
+                        <span class="project-type highlight">Full-Stack</span>
+                        <img src="assets/icons/arrow-right.svg" class="projects-element-icon" alt="Arrow">
+                    </div>                    <div class="projects-element projects-element">
+                        <img src="assets/image/IUTquest.png" alt="IUT Quest de Blois" class="projects-element-img">
+                        <div>
+                            <h3>IUT Quest <span class="project-year ">2026</span></h3>
+                            <p>Projet de groupe pour les Olympiades entre les IUT de Blois.</p>
+                        </div>
+                        <span class="project-type highlight">Full-Stack</span>
+                        <img src="assets/icons/arrow-right.svg" class="projects-element-icon" alt="Arrow">
+                    </div>                    <div class="projects-element projects-element">
+                        <img src="assets/image/IUTquest.png" alt="IUT Quest de Blois" class="projects-element-img">
+                        <div>
+                            <h3>IUT Quest <span class="project-year ">2026</span></h3>
+                            <p>Projet de groupe pour les Olympiades entre les IUT de Blois.</p>
+                        </div>
+                        <span class="project-type highlight">Full-Stack</span>
+                        <img src="assets/icons/arrow-right.svg" class="projects-element-icon" alt="Arrow">
+                    </div>                    <div class="projects-element projects-element">
+                        <img src="assets/image/IUTquest.png" alt="IUT Quest de Blois" class="projects-element-img">
+                        <div>
+                            <h3>IUT Quest <span class="project-year ">2026</span></h3>
+                            <p>Projet de groupe pour les Olympiades entre les IUT de Blois.</p>
+                        </div>
+                        <span class="project-type highlight">Full-Stack</span>
+                        <img src="assets/icons/arrow-right.svg" class="projects-element-icon" alt="Arrow">
+                    </div>                    <div class="projects-element projects-element">
+                        <img src="assets/image/IUTquest.png" alt="IUT Quest de Blois" class="projects-element-img">
+                        <div>
+                            <h3>IUT Quest <span class="project-year ">2026</span></h3>
+                            <p>Projet de groupe pour les Olympiades entre les IUT de Blois.</p>
+                        </div>
+                        <span class="project-type highlight">Full-Stack</span>
+                        <img src="assets/icons/arrow-right.svg" class="projects-element-icon" alt="Arrow">
+                    </div>                    <div class="projects-element projects-element">
+                        <img src="assets/image/IUTquest.png" alt="IUT Quest de Blois" class="projects-element-img">
+                        <div>
+                            <h3>IUT Quest <span class="project-year ">2026</span></h3>
+                            <p>Projet de groupe pour les Olympiades entre les IUT de Blois.</p>
+                        </div>
+                        <span class="project-type highlight">Full-Stack</span>
+                        <img src="assets/icons/arrow-right.svg" class="projects-element-icon" alt="Arrow">
+                    </div>                    <div class="projects-element projects-element">
+                        <img src="assets/image/IUTquest.png" alt="IUT Quest de Blois" class="projects-element-img">
+                        <div>
+                            <h3>IUT Quest <span class="project-year ">2026</span></h3>
+                            <p>Projet de groupe pour les Olympiades entre les IUT de Blois.</p>
+                        </div>
+                        <span class="project-type highlight">Full-Stack</span>
+                        <img src="assets/icons/arrow-right.svg" class="projects-element-icon" alt="Arrow">
+                    </div>                    <div class="projects-element projects-element">
+                        <img src="assets/image/IUTquest.png" alt="IUT Quest de Blois" class="projects-element-img">
+                        <div>
+                            <h3>IUT Quest <span class="project-year ">2026</span></h3>
+                            <p>Projet de groupe pour les Olympiades entre les IUT de Blois.</p>
+                        </div>
+                        <span class="project-type highlight">Full-Stack</span>
+                        <img src="assets/icons/arrow-right.svg" class="projects-element-icon" alt="Arrow">
+                    </div>                    <div class="projects-element projects-element">
+                        <img src="assets/image/IUTquest.png" alt="IUT Quest de Blois" class="projects-element-img">
+                        <div>
+                            <h3>IUT Quest <span class="project-year ">2026</span></h3>
+                            <p>Projet de groupe pour les Olympiades entre les IUT de Blois.</p>
+                        </div>
+                        <span class="project-type highlight">Full-Stack</span>
+                        <img src="assets/icons/arrow-right.svg" class="projects-element-icon" alt="Arrow">
+                    </div>                    <div class="projects-element projects-element">
+                        <img src="assets/image/IUTquest.png" alt="IUT Quest de Blois" class="projects-element-img">
+                        <div>
+                            <h3>IUT Quest <span class="project-year ">2026</span></h3>
+                            <p>Projet de groupe pour les Olympiades entre les IUT de Blois.</p>
+                        </div>
+                        <span class="project-type highlight">Full-Stack</span>
+                        <img src="assets/icons/arrow-right.svg" class="projects-element-icon" alt="Arrow">
+                    </div>                    <div class="projects-element projects-element">
+                        <img src="assets/image/IUTquest.png" alt="IUT Quest de Blois" class="projects-element-img">
+                        <div>
+                            <h3>IUT Quest <span class="project-year ">2026</span></h3>
+                            <p>Projet de groupe pour les Olympiades entre les IUT de Blois.</p>
+                        </div>
+                        <span class="project-type highlight">Full-Stack</span>
+                        <img src="assets/icons/arrow-right.svg" class="projects-element-icon" alt="Arrow">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
     </footer>
 
-    <script src="texteTransition.js"></script>
+
+
+
+    <script src="javascript/darkMode.js"></script>
+    <script src="javascript/menuBurger.js"></script>
+    <script src="javascript/filtres.js"></script>
 </body>
 </html>
-
-
-
-
