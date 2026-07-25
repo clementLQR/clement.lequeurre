@@ -1069,7 +1069,7 @@ footer {
     }
 
     /* Styles header */
-    header {
+    .header {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(8, 1fr);
         gap: 10px;
