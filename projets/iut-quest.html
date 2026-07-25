@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ============ SEO — Balises principales ============ -->
+    <title>IUT Quest — Projet web full-stack | Clément Lequeurre</title>
+    <meta name="description" content="Étude de cas du projet IUT Quest : une application web ludique pour les étudiants de l'IUT de Blois, développée en Laravel, MySQL, JavaScript et Docker par Clément Lequeurre.">
+    <meta name="keywords" content="IUT Quest, projet web, étude de cas, Laravel, MySQL, JavaScript, Docker, développeur full-stack, Blois, Clément Lequeurre">
+    <meta name="author" content="Clément Lequeurre">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://clementlequeurre.com/projets/iut-quest">
+    <meta http-equiv="content-language" content="fr">
+
+    <!-- Apparence navigateur -->
+    <meta name="theme-color" content="#F8FBFB" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#05161A" media="(prefers-color-scheme: dark)">
+    <meta name="color-scheme" content="light dark">
+
+    <!-- ============ Open Graph (Facebook, LinkedIn, Discord…) ============ -->
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Clément Lequeurre — Portfolio">
+    <meta property="og:title" content="IUT Quest — Projet web full-stack">
+    <meta property="og:description" content="Étude de cas : application web ludique pour les étudiants de l'IUT de Blois, développée en Laravel, MySQL, JavaScript et Docker.">
+    <meta property="og:url" content="https://clementlequeurre.com/projets/iut-quest">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:image" content="https://clementlequeurre.com/assets/image/IUTquest.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="604">
+    <meta property="og:image:height" content="863">
+    <meta property="og:image:alt" content="Aperçu de l'application web IUT Quest">
+    <meta property="article:author" content="Clément Lequeurre">
+    <meta property="article:section" content="Projets">
+
+    <!-- ============ Twitter / X Card ============ -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="IUT Quest — Projet web full-stack">
+    <meta name="twitter:description" content="Étude de cas : application web ludique pour les étudiants de l'IUT de Blois (Laravel, MySQL, JavaScript, Docker).">
+    <meta name="twitter:image" content="https://clementlequeurre.com/assets/image/IUTquest.png">
+    <meta name="twitter:image:alt" content="Aperçu de l'application web IUT Quest">
+
+    <!-- ============ Favicons & PWA ============ -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/assets/image/icon-192.png" type="image/png" sizes="192x192">
+    <link rel="apple-touch-icon" href="/assets/image/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- ============ Styles & polices ============ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../style/styleGlobal.css">
+    <link rel="stylesheet" href="../style/styleProjet.css">
+
+    <!-- ============ Données structurées (Schema.org / JSON-LD) ============ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://clementlequeurre.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Projets", "item": "https://clementlequeurre.com/#projects" },
+            { "@type": "ListItem", "position": 3, "name": "IUT Quest" }
+          ]
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "IUT Quest",
+          "headline": "IUT Quest — Application web étudiante",
+          "description": "Application web ludique pour les étudiants de l'IUT de Blois : gestion de quêtes, classements et récompenses. Développée en Laravel, MySQL, JavaScript et Docker.",
+          "url": "https://clementlequeurre.com/projets/iut-quest",
+          "image": "https://clementlequeurre.com/assets/image/IUTquest.png",
+          "inLanguage": "fr-FR",
+          "dateCreated": "2026",
+          "keywords": "Laravel, MySQL, JavaScript, Docker, application web",
+          "author": {
+            "@type": "Person",
+            "name": "Clément Lequeurre",
+            "url": "https://clementlequeurre.com/"
+          },
+          "isPartOf": { "@id": "https://clementlequeurre.com/#website" }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <div class="background">
+        <div style="position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden;">
+        <!-- halo teal en haut à gauche -->
+            <div class="hallo1">
+            </div>
+            <!-- halo secondaire en bas à droite -->
+            <div class="hallo2">
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar glass">
+        <span class="logo">
+            <a href="/" class="logo">CL<span class="dot">.</span></a>
+        </span>
+        <a href="/#projects" class="nav-link">Tous les projets</a>
+        <a href="#" class="nav-link nav-highlight">Demo</a>
+
+        <div>
+            <span class="darkmode">
+                <img src="../assets/icons/sun.svg" alt="Changer de thème (clair / sombre)">
+            </span>     
+        </div>
+    </nav>
+
+    <header class="header-projet">
+        <div>
+            <span class="highlight">Full-stack</span>
+            <span>2026</span>
+        </div>
+
+        <h1>IUT <span>Quest</span></h1>
+
+        <div class="header-projet-description"> 
+            <h3>Description du projet</h3>
+            <div class="header-projet-description">
+                <a href="https://iut-quest.fr/" class="btn">Voir le projet <img src="../assets/icons/arrow-right.svg" alt="Flèche droite"></a>
+                <a href="https://github.com/Louischoubard/PEKIN-EXPRESS" class="btn btn-primary icon-gauche"><img src="../assets/icons/github.svg" alt="Voir le code">Voir le code</a>
+            </div>
+        </div>
+
+        <div class="header-projet-image">
+            <img src="../assets/image/IUTquest.png" alt="IUT Quest" class="glass">
+        </div>
+
+        <div class="header-projet-infos">
+            <div class="role glass">
+                <h3>ROLE</h3>
+                <p>Développeur Full-stack</p>
+            </div>
+
+            <div class="timeline glass">
+                <h3>TIMELINE</h3>
+                <p>3 Semaines</p>
+            </div>
+
+            <div class="type glass">
+                <h3>TYPE</h3>
+                <p>Projet académique</p>
+            </div>
+
+            <div class="status glass">
+                <h3>STATUS</h3>
+                <p>Online</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-contexte">
+            <div>
+                <h4 class="section-title">01 - PRESENTATION</h4>
+                <h2>A propos du projet</h2>
+                <p>Le projet IUT Quest a été développé dans le cadre d'un projet académique, visant à créer une application web interactive pour les étudiants de l'IUT. L'objectif principal était de fournir une plateforme où les étudiants pouvaient participer à des quêtes éducatives, renforçant ainsi leur apprentissage de manière ludique.</p>
+                <p>Le projet a été réalisé en utilisant les technologies web modernes, notamment HTML, CSS et JavaScript pour le front-end, et Node.js avec Express pour le back-end. La base de données a été gérée avec MongoDB, permettant un stockage efficace des informations des utilisateurs et des quêtes.</p>
+                <p>Le développement de l'application a été divisé en plusieurs étapes, incluant la conception de l'interface utilisateur, le développement des fonctionnalités principales, et les tests pour assurer la qualité et la performance de l'application. L'équipe a travaillé en étroite collaboration pour s'assurer que le projet répondait aux besoins des utilisateurs finaux.</p> 
+            </div>
+        </section>
+
+        <section class="section-role">
+            <div>
+                <h4 class="section-title">02 - MON ROLE</h4>
+                <h2>Mes responsabilités</h2>
+                <p>En tant que développeur Full-stack sur le projet IUT Quest, j'étais responsable de la conception et du développement de l'application web. Mon rôle comprenait la création de l'interface utilisateur, le développement des fonctionnalités côté serveur, et l'intégration de la base de données.</p>
+                <p>J'ai travaillé sur la mise en place de l'authentification des utilisateurs, la gestion des quêtes, et l'implémentation des notifications en temps réel. J'ai également participé aux tests et à l'optimisation de l'application pour garantir une expérience utilisateur fluide et réactive.</p>
+                <p>En plus du développement technique, j'ai collaboré avec les autres membres de l'équipe pour définir les exigences du projet, planifier les tâches, et assurer la cohérence du design et de l'expérience utilisateur à travers l'application.</p> 
+            </div>
+        </section>
+
+        <section class="section-technologies">
+            <h4 class="section-title">03 - TECHNOLOGIES</h4>
+            <h2>Stack technique</h2>
+            <div class="div-tech">
+                <div class="tech-icons glass">
+                    <img src="../assets/icons/laravel.svg" alt="Laravel" class="tech-icon">
+                    <span class="tech-icon-name">Laravel</span>
+                    <p>Framework PHP MVC</p>
+                </div>
+                <div class="tech-icons glass">
+                    <img src="../assets/icons/docker.svg" alt="Docker" class="tech-icon">
+                    <span class="tech-icon-name">Docker</span>
+                    <p>Environnements conteneurisés et reproductibles</p>
+                </div>
+                <div class="tech-icons glass">
+                    <img src="../assets/icons/mysql.svg" alt="MySQL" class="tech-icon">
+                    <span class="tech-icon-name">MySQL</span>
+                    <p>Système de gestion de base de données</p>
+                </div>
+                <div class="tech-icons glass">
+                    <img src="../assets/icons/javascript.svg" alt="JavaScript" class="tech-icon">
+                    <span class="tech-icon-name">JavaScript</span>
+                    <p>Langage de programmation client</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-fonctionnalite">
+            <div>
+                <h4 class="section-title">04 - FONCTIONNALITES</h4>
+                <h2>Fonctionnalités principales</h2>
+            </div>
+            <div class="fonctionnalites">
+                <div class="fonctionnalite glass">
+                    <h3>Gestion des quêtes</h3>
+                    <p>Les utilisateurs peuvent créer, modifier et supprimer des quêtes, ainsi que suivre leur progression.</p>
+                </div>
+                <div class="fonctionnalite glass">
+                    <h3>Interface interactive</h3>
+                    <p>L'application offre une interface utilisateur intuitive et réactive, facilitant la navigation et l'interaction.</p>
+                </div>
+                <div class="fonctionnalite glass">
+                    <h3>Notifications en temps réel</h3>
+                    <p>Les utilisateurs reçoivent des notifications instantanées pour les mises à jour importantes et les nouvelles quêtes.</p>
+                </div>
+                <div class="fonctionnalite glass">
+                    <h3>Classements et récompenses</h3>
+                    <p>Un système de classement permet aux utilisateurs de voir leur position par rapport aux autres, avec des récompenses pour les meilleurs performeurs.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-defis">
+            <h4 class="section-title">05 - DEFIS</h4>
+            <h2>Défis rencontrés</h2>
+            <div class="defis-solutions">
+                <div class="defis">
+                    <div class="defi glass">
+                        <span class="defi-span">DÉFI</span>
+                        <p>Nous avons dû optimiser les requêtes de la base de données pour améliorer les temps de réponse de l'application.</p>
+                    </div>
+                    <div class="defi glass">
+                        <span class="defi-span">DÉFI</span>
+                        <p>La mise en place d'un système d'authentification sécurisé a été un défi majeur, nécessitant l'utilisation de techniques avancées de cryptage.</p>
+                    </div>
+                    <div class="defi glass">
+                        <span class="defi-span">DÉFI</span> 
+                        <p>Assurer que l'application fonctionne correctement sur différents navigateurs et appareils a nécessité des tests approfondis et des ajustements du code.</p>
+                    </div>
+                </div>
+                <div class="solutions">
+                    <div class="solution glass"> 
+                        <span class="solution-span">SOLUTION</span>
+                        <p>Pour surmonter ces défis, nous avons mis en place des techniques d'optimisation de code, utilisé des bibliothèques et frameworks éprouvés, et effectué des tests rigoureux pour garantir la qualité et la performance de l'application.</p>
+                    </div>
+                    <div class="solution glass">
+                        <span class="solution-span">SOLUTION</span>
+                        <p>Pour surmonter ces défis, nous avons mis en place des techniques d'optimisation de code, utilisé des bibliothèques et frameworks éprouvés, et effectué des tests rigoureux pour garantir la qualité et la performance de l'application.</p>
+                    </div>
+                    <div class="solution glass">
+                        <span class="solution-span">SOLUTION</span>
+                        <p>Pour surmonter ces défis, nous avons mis en place des techniques d'optimisation de code, utilisé des bibliothèques et frameworks éprouvés, et effectué des tests rigoureux pour garantir la qualité et la performance de l'application.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-resultats">
+            <h4 class="section-title">06 - RESULTATS</h4>
+            <h2>En chiffres</h2>
+            <div class="resultats">
+                <div class="resultat glass">
+                    <h3>+1000</h3>
+                    <p>Utilisateurs actifs</p>
+                </div>
+                <div class="resultat glass">
+                    <h3>+50</h3>
+                    <p>Quêtes créées</p>
+                </div>
+                <div class="resultat glass">
+                    <h3>+200</h3>
+                    <p>Récompenses distribuées</p>
+                </div>
+                <div class="resultat glass">
+                    <h3>+90%</h3>
+                    <p>Taux de satisfaction</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-projet-screenshots">
+            <div>
+                <h4 class="section-title">07 - SCREENSHOTS</h4>
+                <h2>Quelques captures d'écran</h2>
+            </div>
+
+            <div>
+                <img src="../assets/image/IUTquest.png" alt="Capture d'écran 1" class="screenshot">
+                <div class="screenshot-group">
+                    <img src="../assets/image/IUTquest.png" alt="Capture d'écran 2" class="screenshot">
+                    <img src="../assets/image/IUTquest.png" alt="Capture d'écran 3" class="screenshot"> 
+                </div>
+            </div>
+        </section>
+
+        <section class="section-projets-suivants">
+            <div class="glass">
+                <span>Projets suivants</span>
+                <img src="../assets/icons/arrow-right.svg" alt="Flèche vers la droite" class="arrow-right">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span>© 2026 Clément Lequeurre</span>
+        <span>Designed & built with care</span>
+    </footer>
+
+    <script src="../javascript/darkmode.js"></script>
+    <script src="../javascript/curseur.js"></script>
+</body>
+</html>

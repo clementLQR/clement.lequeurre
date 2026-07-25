@@ -102,6 +102,19 @@ a {
     backdrop-filter: blur(10px);
 }
 
+h1 {
+    margin-bottom: 20px;
+    font-size: clamp(1.75rem, 1.1rem + 2.8vw, 3.5rem);
+    font-weight: 700;
+}
+
+h1 span {
+    background-image: linear-gradient(-45deg, var(--primary), var(--text));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .btn {
     display: flex;
     align-items: center;
@@ -117,6 +130,7 @@ a {
     text-decoration: none;
     cursor: pointer;
     transition: var(--transition);
+    box-shadow: 0 2px 5px var(--primary-glow);
 }
 
 .dark .btn {
@@ -135,6 +149,7 @@ a {
 .btn-primary {
     border: none;
     background-color: var(--primary);
+    box-shadow: 0 2px 5px var(--primary);
     color: var(--surface);
 }
 
@@ -284,7 +299,6 @@ span.highlight2 {
 
 .dark .nav-highlight {
     color: var(--text);
-    transform: translateY(-2px);
 }
 
 .darkmode,
@@ -371,7 +385,7 @@ span.highlight2 {
 
 /* Styles header */
 
-header {
+.header {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(7, minmax(min-content, 1fr));
@@ -389,19 +403,6 @@ header {
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
-}
-
-.header-div1 h1 {
-    margin-bottom: 20px;
-    font-size: clamp(1.75rem, 1.1rem + 2.8vw, 3.5rem);
-    font-weight: 700;
-}
-
-.header-div1 h1 span {
-    background-image: linear-gradient(-45deg, var(--primary), var(--text));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .header-div1 h2 {
@@ -676,7 +677,7 @@ section {
 }
 
 .section-title {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     color: var(--primary);
     font-size: 15px;
     font-weight: 700;
@@ -703,7 +704,6 @@ section h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 20px;
     padding: 100px 5%;
 }
 
