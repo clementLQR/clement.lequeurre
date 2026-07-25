@@ -954,7 +954,7 @@ section h2 {
     text-align: center;
 }
 
-.contact a {
+.contact-mail {
     font-size: 30px;
     font-weight: 600;
     color: var(--primary);
@@ -963,7 +963,7 @@ section h2 {
     padding-bottom: 5px;
 }
 
-.contact a:hover {
+.contact-mail:hover {
     color: var(--primary);
     border-bottom: 3px solid var(--primary);
 
@@ -1216,6 +1216,14 @@ footer {
         width: 100%;
     }
 
+    .skills-container div {
+        width: 48%;
+    }
+
+    .skill span {
+        font-size: 14px;
+    }
+
     /* projects */
 
     .projects-grid {
@@ -1263,7 +1271,7 @@ footer {
         padding: 20px;
     }
 
-    .contact a {
+    .contact .contact-mail {
         font-size: 15px;
     }
 
