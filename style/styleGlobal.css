@@ -61,6 +61,10 @@ a {
     text-decoration: none;
 }
 
+[hidden] {
+    display: none !important;
+}
+
 .background {
     position: fixed;
     inset: 0;

@@ -14,7 +14,7 @@
     gap: 20px;
 }
 
-.header-projet-description{
+.header-projet-description, .header-projet-description-btn{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,6 +22,7 @@
 }
 
 .header-projet-description h3{
+    width: 80%;
     margin: 0;
 }
 
@@ -87,6 +88,10 @@ section{
 
 /* section fonctionnalités */
 
+.section-fonctionnalite{
+    gap: 20px;
+}
+
 .fonctionnalites{
     display: flex;
     flex-direction: column;
@@ -107,13 +112,12 @@ section{
     display: flex;
     gap: 20px;
     justify-content: space-between;
+    flex-direction: column;
 }
 
-.defis{
+.defi-solution{
     flex: 1;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     gap: 20px;
 }
 
@@ -121,7 +125,7 @@ section{
     padding: 20px;
     border-radius: 14px;
     background: rgba(122, 5, 5, 0.15);
-    height: 100%;
+    flex: 1;
 }
 
 .defi-span{
@@ -135,19 +139,12 @@ section{
     font-size: 12px;
 }
 
-.solutions{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 20px;
-}
-
 .solution{
     padding: 20px;
     border-radius: 14px;
     background: var(--surface);
     height: 100%;
+    flex: 1;
 }
 
 .solution-span{
@@ -205,6 +202,10 @@ section{
     padding: 100px 20% 0;
 }
 
+.section-projets-suivants a{
+    width: 100%;
+}
+
 .section-projets-suivants div{
     display: flex;
     justify-content: space-between;
@@ -221,4 +222,58 @@ section{
 
 .dark .section-projets-suivants img{
     filter: invert(1);
+}
+
+@media (max-width: 768px) {
+
+    /* header */
+    .header-projet{
+        padding: 100px 20px 0px;
+    }
+
+    .header-projet-description{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-projet-description h3{
+        width: 100%;
+    }
+
+    .header-projet-infos{
+        display: none;
+    }
+
+    /* main */
+
+    section{
+        padding: 50px 20px 0;
+    }
+
+    .section-fonctionnalite{
+        flex-direction: column;
+    }
+
+    .defi-solution{
+        flex-direction: column;
+    }
+
+    .resultats{
+        flex-direction: column;
+    }
+
+    .screenshot-group{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .section-projet-screenshots img{
+        width: 100%;
+        border-radius: 14px;
+    }
+
+    .section-projets-suivants {
+        padding: 100px 20px 0;
+    }
+
 }

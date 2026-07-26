@@ -4,6 +4,7 @@ const previewType = previewBox.querySelector('.project-type');
 const previewYear = previewBox.querySelector('.project-year');
 const previewTitle = previewBox.querySelector('h3');
 const previewDesc = previewBox.querySelector('p');
+const previewLink = previewBox.querySelector('.btn');
 
 const projectRows = document.querySelectorAll('.projects-element');
 
@@ -23,6 +24,10 @@ const selectProject = (element) => {
     previewYear.textContent = year.textContent.trim();
     previewTitle.textContent = title;
     previewDesc.textContent = desc;
+
+    const url = element.dataset.url;
+    previewLink.href = url || '#';
+    previewLink.hidden = !url;
 };
 
 projectRows.forEach((element) => {
