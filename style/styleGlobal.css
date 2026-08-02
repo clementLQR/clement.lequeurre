@@ -843,7 +843,6 @@ section h2 {
     gap: 20px;
     width: 50%;
     height: 70dvh;
-    padding-right: 10px;
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: var(--primary) transparent;
@@ -1243,6 +1242,29 @@ footer {
         margin: 0;
         padding: 10px 5px;
         font-size: 12px;
+    }
+
+    .project-type.highlight {
+        margin : 0;
+    }
+
+    .projects-element-img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .projects-element {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .projects-element-description {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        order: 1;
     }
 
     /* experiences */
